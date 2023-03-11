@@ -1160,6 +1160,11 @@ namespace EPI.CSharp.Api
             return clientOrderId;
         }
 
+        public string Buy(string contract, double price, int number)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// 卖出
         /// </summary>
@@ -1171,6 +1176,11 @@ namespace EPI.CSharp.Api
             var clientOrderId = Guid.NewGuid().GetHashCode().ToString();
             pendingOrderList.Add(string.Format("{0},{1},{2},{3},{4}", clientOrderId, contract, "", 2, number));
             return clientOrderId;
+        }
+
+        public string Sell(string contract, double price, int number)
+        {
+            throw new NotImplementedException();
         }
 
         /// <summary>
